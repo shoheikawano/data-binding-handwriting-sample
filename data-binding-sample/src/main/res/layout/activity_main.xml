@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- data declaration -->
+    <data>
+        <!-- import a custom type of class for use within the binding expression -->
+        <import type="com.shoheiskawano.databindingsample.MyStringUtils" />
+
+        <!-- variable declaration -->
+        <variable
+            name="user"
+            type="com.shoheiskawano.databindingsample.User" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- use a static method of the imported class MyStringUtils-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{MyStringUtils.capitalize(user.fullName)}" />
+
+        <!-- if the firstName is null then DEFAULT_NAME will be set -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName ?? user.DEFAULT_NAME}" />
+    </LinearLayout>
+</layout>
