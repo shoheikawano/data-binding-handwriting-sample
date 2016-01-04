@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DataBindingSample.iml" filepath="$PROJECT_DIR$/DataBindingSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-binding-handwriting-sample.iml" filepath="$PROJECT_DIR$/data-binding-handwriting-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-binding-sample/data-binding-sample.iml" filepath="$PROJECT_DIR$/data-binding-sample/data-binding-sample.iml" />
     </modules>
   </component>
